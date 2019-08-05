@@ -10,4 +10,10 @@ public class PersonController {
 	public String hello() {
 	      return "Hello World";
 	}
+
+	@RequestMapping(value = "/object")
+	public Object object(@RequestBody Object object) {
+	      return object;
+	}
+
 }
